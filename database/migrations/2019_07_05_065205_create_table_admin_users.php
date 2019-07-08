@@ -17,8 +17,7 @@ class CreateTableAdminUsers extends Migration
             //increments string timestamps 类型
             $table->increments('id');
             $table->string('name');
-            $table->integer('password');
-            $table->integer('phone');
+            $table->string('password');
             
         });
     }
