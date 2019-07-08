@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+    // 登录和退出
+    Route::resource('adminlogin','Admin\AdminloginController');
 // 前台资源控制器 
 Route::resource('/index','Homes\HomeController');
 // 前台页面跳转控制器
@@ -24,7 +26,9 @@ Route::get('/buytoday','Homes\HomeController@buytoday');
 Route::get('/information','Homes\HomeController@information');
 Route::get('/about','Homes\HomeController@about');
 Route::get('/register','Homes\HomeController@register');
-// 后台资源控制器
-Route::resource('/admin','Admin\AdminController');
-//后台商品控制器
-Route::resource('/admingoods','Admin\GoodsController');
+Route::group(['middleware'=>'login'],function(){
+    // 后台资源控制器
+    Route::resource('/admin','Admin\AdminController');
+    // 后台管理员控制器
+    Route::resource('/admingly','Admin\AdminglyController');
+});
