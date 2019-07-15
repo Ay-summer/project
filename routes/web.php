@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,9 +25,18 @@ Route::get('/buytoday','Homes\HomeController@buytoday');
 Route::get('/information','Homes\HomeController@information');
 Route::get('/about','Homes\HomeController@about');
 Route::get('/register','Homes\HomeController@register');
-Route::group(['middleware'=>'login'],function(){
     // 后台资源控制器
     Route::resource('/admin','Admin\AdminController');
     // 后台管理员控制器
     Route::resource('/admingly','Admin\AdminglyController');
+    //订单
+    Route::resource('/admindd','Admin\DingController');
+    //前台接算
+    Route::resource('/shopjs','Homes\ShopjsController');
+
+    //支付
+    Route::get("/zhifu","Homes\ShopjsController@zhifu");
+
+    Route::group(['middleware'=>'login'],function(){
+
 });

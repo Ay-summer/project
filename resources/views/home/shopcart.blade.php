@@ -222,7 +222,8 @@
           <span class="batch-dele-btn">批量删除</span>
         </div>
         <div class="th Settlement">
-          <button class="layui-btn">结算</button>
+
+        <a href="/shopjs"><button class="layui-btn">结算</button></a>
         </div>
         <div class="th total">
           <p>应付：<span class="pieces-total">0</span></p>
