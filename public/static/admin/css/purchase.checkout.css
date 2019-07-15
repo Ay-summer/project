@@ -1,0 +1,306 @@
+﻿img::selection {background:transparent;}
+img::-moz-selection {background:transparent;}
+img {-ms-interpolation-mode:bicubic;}
+
+input {margin:0; padding:0;}
+table {border-collapse:collapse; border-spacing:0;}
+
+.group:after {height:0; content:"."; display:block; visibility:hidden; clear:both; font-size:0; line-height:0;}
+.group {zoom:1;}
+* html .group {height:1%;}
+*:first-child+html .group {min-height:1px;}
+
+.loading ,.checkout-state{background: #fff}
+.loading b ,.checkout-state b{width:28px; height:28px; float:left; background:url(../images/loading.gif) no-repeat center center;}
+.loading-1 ,.checkout-state{height:28px; border:1px solid #edd28b; padding:0 10px; float:left; line-height:28px;}
+.loading-1 b ,.checkout-state b {margin-right:5px;}
+
+.m2 {margin-bottom:20px;}
+.header {padding:20px 0;}
+#logo {padding-left:5px; float:left;}
+.language {line-height:20px; text-align:right;}
+.language a, .language a:visited, .language a:hover {color:#005ea7;}
+.progress{padding-top:6px}
+.progress .progress-1{background:url(../images/step2.png) no-repeat;width:481px;padding-top:23px;overflow:hidden;height:23px;}
+.progress ul{width:481px;float:right;}
+.progress li{width:160px;height:23px;float:left;color:#bce8a3;line-height:23px;text-align:center;}
+.progress li b{width:22px;height:25px;display:none;}
+.progress li.step-1{color:#aaaaaa;}
+.progress li.step-2{color:#7abd54;width:161px;}
+.progress li.step-3{color:#aaaaaa;}
+.progress li.complete b{background-position:0 -50px;}
+
+#checkout {width:988px; border:1px solid #ddd; border-top-left-radius:4px; border-top-right-radius:4px; -moz-border-radius-topLeft:4px; -moz-border-radius-topRight:4px; -webkit-border-top-left-radius:4px; -webkit-border-top-right-radius:4px;}
+#checkout .mt {height:35px; background-color:#f3f3f3;}
+#checkout .mt h2 {height:35px; overflow:hidden; line-height:100px; background:url(../images/checkout-title.gif) no-repeat 10px 0;}
+
+#checkout .form-tip {color:#999;}
+
+#checkout .btn-submit {height:30px; margin-right:10px; padding-left:20px; float:left; line-height:30px; font-size:14px; font-weight:700; background:url(../images/btn-bg-2.png) no-repeat 0 0;}
+#checkout .btn-submit span {height:30px; padding-right:20px; float:left; cursor:pointer; background:url(../images/btn-bg-2.png) no-repeat 100% -30px;}
+#checkout a.btn-submit, #checkout a.btn-submit:visited, #checkout a.btn-submit:hover {color:#fff; text-decoration:none;}
+
+#checkout .invoice-submit {height:30px; margin-right:10px; padding-left:20px; float:left; line-height:30px; font-size:14px; font-weight:700; background:url(../images/btn-bg-2.png) no-repeat 0 0;}
+#checkout .invoice-submit span {height:30px; padding-right:20px; float:left; cursor:pointer; background:url(../images/btn-bg-2.png) no-repeat 100% -30px;}
+#checkout a.invoice-submit, #checkout a.invoice-submit:visited, #checkout a.invoice-submit:hover {color:#fff; text-decoration:none;}
+
+.invoice-tips li {line-height:18px;}
+.invoice-tips li span {color:#c00;}
+.invoice-tips li.fore1 {padding-bottom:10px;}
+.invoice-tips li.fore2 {color:#f60;}
+.invoice-tips .fore3{margin-left:36px;color:#f60;}
+.invoice-tips .fore3 a:link,.invoice-tips .fore3 a:visited{margin-right:10px;color:#005ea7;}
+.invoice_content_title{display: block;margin-bottom: 5px;padding-bottom: 5px;font-size: 14px;	}
+
+.step-content .freight-div {height:24px;line-height:24px;padding:0 44px;margin-bottom:5px;text-align:right;}
+.step-content .freight-div .freight-span {margin-right:20px;}
+
+.checkout-steps {}
+.checkout-steps .step {border-top:1px solid #ddd;}
+.checkout-steps .step-current {width:984px; margin:-1px; border:3px solid #f60; position:relative;}
+.checkout-steps .step-title {height:45px; padding:0 20px; line-height:45px;}
+.checkout-steps .step-title strong {color:#999; font-size:14px;}
+.checkout-steps .step-current .step-title strong, .checkout-steps .step-complete .step-title strong {color:#000;}
+.checkout-steps .step-action {padding-left:10px; color:#005ea7; font-size:12px; font-weight:400;}
+.checkout-steps .step-action a, .checkout-steps .step-action a:visited, .checkout-steps .step-action a:hover {color:#005ea7;}
+
+.sbox-wrap {padding:0 42px;}
+.sbox {width:900px; overflow:hidden;}
+#checkout .sbox {padding:5px 0 20px;}
+#checkout .step-complete .sbox-wrap {padding:0 44px;}
+#checkout .s-content p {line-height:22px;}
+
+#consignee {}
+/* #consignee .content {padding-bottom:15px;}
+#consignee .s-content p {line-height:22px;}
+#consignee .form {padding:10px 0 20px;} */
+#consignee .form .form-tip {padding-left:10px; float:left;}
+#consignee .item {height:28px; margin-bottom:5px; overflow:hidden; zoom:1; line-height:28px;}
+#consignee .item-selected {background-color:#fff4d3;}
+#consignee .item .hookbox {margin:7px 5px 0 8px; *margin:3px 2px 0 5px;}
+#consignee .item .cl999{color: #999}
+@-moz-document url-prefix() {
+    #consignee .item .hookbox {margin-top:7px 5px 0 8px;}
+}
+
+#consignee .address-list {height:18px; margin-bottom:5px; overflow:hidden;}
+#consignee .address-list .inner {width:900px; height:17px; border-top:1px solid #ccc; text-align:center;}
+#select-more {width:100px; height:16px; margin:-1px auto 0; border:1px solid #ccc; border-top-color:#fff; position:relative; text-align:left; cursor:pointer; background:url(../images/more-bg-1.gif) repeat-x;}
+#select-more span, #select-more s {float:left; cursor:pointer;}
+#select-more span {margin-right:5px; color:#666; line-height:16px;}
+#select-more s {width:5px; height:7px; margin-top:4px; overflow:hidden; line-height:0; font-size:0; background:url(../images/more-arrow-1.gif) no-repeat;}
+#consignee .address-list .select-expand span {padding-left:10px;}
+#consignee .address-list .select-collapse span {padding-left:35px;}
+#consignee .address-list .select-collapse s {background-position:0 -6px;}
+
+#consignee .list {padding:5px 0; overflow:hidden; zoom:1;}
+#consignee .list .label {width:85px; height:26px; margin-right:5px; float:left; color:#666; line-height:26px; text-align:right;}
+#consignee .list .label em {margin-right:5px; color:#f60; font-family:sans-serif;}
+#consignee .list .field {height:26px; float:left; line-height:26px;width:760px}
+#consignee .list .fieldarea {height:160px; float:left; line-height:160px;width:760px}
+#consignee .list .servicecheckbox {line-height:24px;height:24px}
+#consignee .message {border:1px solid #db9a9a; padding:4px 0; background-color:#ffe8e8;}
+#consignee .message .error {height:26px; padding-left:20px; color:#c00; line-height:26px;display:inline-block;}
+#consignee .message i {margin-right:5px; float:left; overflow:hidden; line-height:0; font-size:0;}
+#consignee .message .error i {width:16px; height:15px; margin-top:5px; background:url(../images/error-icon-1.gif) no-repeat;}
+
+#consignee .textbox {width:138px; height:16px; border:1px solid #bbb; padding:4px 3px; font-family:Arial,"\5b8b\4f53",sans-serif;}
+#consignee input.focus {border:1px solid #fdd253; background-color:#ffffe6;}
+
+#consignee .list-radio .hookbox{vertical-align: top;margin:7px 5px 0 0;}
+#consignee .list-radio label{margin-right:20px;}
+
+#consignee .select-address select {height:22px; margin:2px 5px 0 0;}
+
+#consignee .full-address .textbox {width:308px;}
+
+#consignee .phone {float:left;}
+#consignee .phone span, #consignee .phone em {float:left;}
+#consignee .phone em {padding:0 20px 0 5px; color:#999;}
+#consignee .phone span {color:#666;}
+
+#consignee .form-btn {height:30px; padding-top:20px;}
+
+
+#payment-ship {}
+/* #payment-ship .sbox {padding:10px 0 20px;} */
+#payment-ship .form-btn {height:30px; padding-top:15px;}
+#payment-ship .payment {padding-bottom:10px;}
+
+#payment-ship h3 {height:30px; border-bottom:1px dashed #ffe6bc; line-height:30px;}
+#payment-ship .item {height:28px; overflow:hidden; zoom:1; line-height:28px;}
+#payment-ship .item-selected {background-color:#fff4d3;}
+#payment-ship .item .hookbox {margin:7px 5px 0 8px; *margin:3px 2px 0 5px;}
+@-moz-document url-prefix() {
+    #payment-ship .item .hookbox {margin-top:7px 5px 0 8px;}
+}
+
+#payment-ship .mc {padding-top:10px;}
+#payment-ship .sment-box {border-bottom:1px dashed #ffe6bc; padding-bottom:5px;}
+#payment-ship .item .label {width:210px;}
+#payment-ship .item .label em {color:#c00;}
+#payment-ship .item .field {float:left;}
+#payment-ship .item .tip {padding-right:5px; color:#999;}
+#payment-ship a.rlink, #payment-ship a.rlink:visited, #payment-ship a.rlink:hover {color:#005ea7;}
+
+.payment-mark {width:600px; padding:0 0 10px 40px; _padding:0 0 18px 48px;}
+*+html .payment-mark {padding:0 0 18px 48px;}
+
+.express-form {padding-top:10px;}
+.express-form .list {padding:5px 0; overflow:hidden; zoom:1; line-height:24px;}
+.express-form .field {float:left;}
+.express-form .label {width:120px; margin-right:5px; line-height:24px; text-align:right;}
+.express-form .warm-prompt {color:#999;}
+.express-form .delivery-time {}
+.express-form .delivery-time .t-item {height:26px; overflow:hidden; zoom:1; line-height:26px;}
+.express-form .hookbox {margin:6px 5px 0 8px; *margin:1px 2px 0 5px;}
+.express-form .payment-type {}
+.express-form .payment-type ul {float:left;}
+.express-form .payment-type li {padding-right:20px; float:left; overflow:hidden; zoom:1; line-height:26px;}
+.express-form .big-tick select {height:22px; margin:2px 10px 0 0;}
+.express-form .tooltip {height:24px; border:1px solid #edd28b; padding:0 10px; float:left; background-color:#fffdee;}
+.express-form .tooltip span {margin-right:5px; float:left; color:#f60;}
+.express-form .tooltip .tooltip-close {width:7px; height:7px; margin-top:8px; float:left; overflow:hidden; line-height:0; font-size:0; background:url(../images/tooltip-close-icon-1.gif) no-repeat;}
+
+.sment-form {padding-top:5px;}
+.sment-form .list {height:26px; padding:5px 0; overflow:hidden; zoom:1; line-height:26px;}
+.sment-form .list select {height:22px; margin-top:2px;}
+.sment-form .note li {float:left; color:#999; line-height:22px;}
+.sment-form .note li.first {width:40px;}
+
+.subway-line {padding:0 0 5px;}
+
+
+#campus-sment .sment-box, #subway-sment .sment-box {width:900px; overflow:hidden; zoom:1;}
+#campus-sment .sment-box .item, #subway-sment .sment-box .item {width:450px; float:left;}
+#campus-sment .item .label, #subway-sment .item .label {width:170px;}
+
+
+#part-order {}
+#part-order h2 {height:30px; overflow:hidden; zoom:1; line-height:30px;}
+
+#part-order .invoice {margin-bottom:10px; border-bottom:1px solid #ffe6bc; padding-bottom:10px;}
+#part-order .invoice-content {padding-top:5px;}
+#checkout .invoice-content {line-height:22px;}
+#checkout .check-fq{padding-left:20px;}
+#checkout .check-fq input{vertical-align: middle;width:16px;height:16px;margin-left:-20px}
+#checkout .check-fq .cl999{color: #999}
+#checkout a.return-edit {float:right; font-size:12px; font-weight:400;}
+#checkout a.return-edit, #checkout a.return-edit:visited {color:#005ea7;}
+#checkout a.return-edit:hover {color:#005ea7;}
+
+#order-cart {width:900px;}
+#order-cart .order-review {width:900px; padding-top:10px;}
+#order-cart .review-thead {width:100%;}
+#order-cart .review-thead td {height:25px; border-left:1px solid #fff; color:#666; line-height:25px; text-align:center; background-color:#ffe6bc;}
+#order-cart .review-thead .fore1 {border-left:0;}
+#order-cart .review-thead .fore2 {width:150px;}
+#order-cart .review-thead .fore3 {width:120px;}
+#order-cart .review-thead .fore4 {width:100px;}
+#order-cart .review-tbody {border-bottom:1px dashed #ddd; padding:10px 0;}
+#order-cart .review-block .block-header {border-bottom:1px solid #ddd;}
+#order-cart .review-block .block-header td {line-height:30px;}
+#order-cart .review-block .block-header {background-color:#e5fde5;}
+#order-cart .review-suit .block-header {background-color:#e0f1ff;}
+#order-cart .review-block td.p-promotion {line-height:normal;}
+.review-present .block-header .fore1 b, .review-sale .block-header .fore1 b {width:32px; height:21px; margin:5px 10px 0 0; float:left; overflow:hidden; background:url(../images/meet-icon-1.gif) no-repeat;}
+.review-present .block-header .fore1 b {background-position:0 -21px;}
+#order-cart .review-gift {border-bottom:1px dashed #ddd; padding:5px 10px; color:#999;}
+#order-cart .p-goods {width:406px;}
+#order-cart .order-table {width:900px;}
+#order-cart .order-table td {padding-left:1px;}
+#order-cart .order-table .fore1 {width:406px; padding:0 10px;}
+#order-cart .order-table .p-price {width:140px; padding-right:10px; text-align:right;}
+#order-cart .order-table .p-promotion {width:120px; padding-top:5px;}
+#order-cart .order-table .fore2 {width:100px; text-align:center;}
+#order-cart .order-table .p-price strong {color:#333;}
+#order-cart .p-promotion span {height:20px; margin-bottom:5px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; display:block; overflow:hidden; color:#fff; line-height:20px; text-align:center;}
+#order-cart .p-promotion em {font-family:Verdana,Arial;}
+#order-cart .p-promotion .return-now {background-color:#3b0;}
+#order-cart .p-promotion .give-points {background-color:#f90;}+
+#order-cart .p-inventory {}
+#order-cart .p-inventory strong {color:#c00;}
+#order-cart .p-inventory a, #order-cart .p-inventory a:visited, #order-cart .p-inventory a:hover {color:#005ea7;}
+#order-cart .review-tbody-highlight {margin:-1px 0; border:1px solid #db9a9a; position:relative; background-color:#ffe8e8;}
+#order-cart .review-tbody-highlight .order-table {width:898px;}
+#order-cart .review-tbody-highlight .p-goods {width:404px;}
+#order-cart .p-goods {overflow:hidden; zoom:1;}
+#order-cart .p-img {width:50px; height:50px; margin-right:5px; border:1px solid #ddd; padding:0; float:left; overflow:hidden;}
+#order-cart .p-detail {width:346px; float:left; line-height:16px;}
+#order-cart .p-name a, #order-cart .p-name a:visited, #order-cart .p-name a:hover {color:#005ea7;}
+#order-cart .p-more, #order-cart .p-extra {color:#999; line-height:20px;}
+#order-cart .p-extra {padding-top:5px;}
+.order-summary {padding-top:10px;}
+.order-summary label, .order-summary input {float:left;}
+.order-summary .summary-form {width:600px; overflow:hidden;}
+.order-summary .hookbox {margin:7px 5px 0 8px; *margin:3px 2px 0 5px;}
+@-moz-document url-prefix() {
+    .order-summary .hookbox {margin:8px 5px 0 8px;}
+}
+.order-summary .summary-form .item {height:28px; overflow:hidden; zoom:1; line-height:28px;}
+.order-summary .statistic {width:300px;}
+.order-summary .statistic .list {height:24px; line-height:24px; overflow:hidden; zoom:1;}
+.order-summary .statistic span {width:180px; margin-right:20px; float:left; text-align:right;}
+.order-summary .statistic em {color:#f60;}
+.order-coupon {padding-top:10px;}
+.order-coupon .toggle-title {height:30px; overflow:hidden; zoom:1;}
+.order-coupon .toggler {height:15px; margin-top:7px; float:left; line-height:15px;}
+.order-coupon .toggler b {width:15px; height:15px; margin-right:5px; float:left; overflow:hidden; line-height:0; font-size:0; background:url(../images/toggler-arrow.gif) no-repeat;}
+.order-coupon .toggle-active .toggler b {background-position:0 -15px;}
+.order-coupon a.toggler, .order-coupon a.toggler:visited, .order-coupon a.toggler:hover {color:#005ea7;}
+.order-coupon .toggle-wrap {padding:0 20px 10px;}
+.order-coupon .cbox {width:858px; border:1px solid #a3d1ec; background-color:#eefaff;}
+.order-coupon .inner {padding:18px;}
+#coupons .tip, #gift .tip {color:#999;}
+#coupons .list {overflow:hidden; zoom:1;}
+#coupons .virtual-from {padding:5px 0; overflow:hidden;}
+#coupons .virtual-from h4 {padding-bottom:5px; line-height:22px;}
+#coupons .virtual-from .list {height:28px; line-height:28px;}
+#coupons .virtual-from .list span {color:#f60;}
+#coupons .virtual-from .list-selected {border:1px solid #a3d1ec; font-weight:700; background-color:#fff;}
+#coupons .virtual-from .hookbox {margin:7px 5px 0 8px; *margin:3px 2px 0 5px;}
+#coupons .virtual-from, #coupons .actual-form {border-bottom:1px dashed #a3d1ec;}
+#coupons .actual-form {padding:10px 0;}
+#coupons .actual-form .list {height:26px; line-height:26px;}
+#coupons .actual-form a {margin-left:20px;}
+#coupons .actual-form a, #coupons .actual-form a:visited, #coupons .actual-form a:hover,
+#gift .tip a, #gift .tip a:visited, #gift .tip a:hover {color:#005ea7;}
+#coupons .actual-form .label, #gift .gift-form .label {margin-right:10px;}
+#coupons .actual-form .textbox, #gift .gift-form .textbox {width:250px; height:16px; margin-right:5px; border:1px solid #ddd; border-top-color:#aaa; border-left-color:#aaa; padding:4px;}
+#coupons .total, #gift .total {padding-top:10px;}
+#coupons .total strong, #gift .total strong {color:#f60;}
+#gift .gift-item {border-bottom:1px dashed #a3d1ec; padding:5px 0 10px;}
+#gift .gift-item h4 {padding-bottom:5px;}
+#gift .gift-form .group {height:26px; line-height:26px;}
+.order-coupon .btn-add {width:50px; height:26px; border:0; line-height:26px; text-align:center; background:url(../images/btn-50x26-1.gif) no-repeat;}
+@-moz-document url-prefix() {
+    .order-coupon .btn-add { padding-bottom:2px;}
+}
+#gift .gift-grid {width:822px; overflow:hidden;}
+#gift .gift-table {width:820px; border:1px solid #e6e6e6; border-right:0; background-color:#fff;}
+#gift .gift-table th {height:30px; border-bottom:1px solid #e6e6e6; color:#666; font-weight:400; text-align:center; background-color:#f9f9f9;}
+#gift .gift-table th.last {border-right:1px solid #e6e6e6;}
+#gift .gift-table .fore1 {width:100px;}
+#gift .gift-table .fore2 {width:130px;}
+#gift .gift-table .fore3 {width:124px;}
+#gift .gift-table td {height:32px; border-right:1px solid #e6e6e6; text-align:center;}
+#gift .gift-table td.g-price {padding-right:5px; text-align:right;}
+#gift .gift-table td.g-price span {color:#c00;}
+
+#order-remark .group {height:26px; line-height:26px;}
+#order-remark .textbox {width:250px; height:16px; margin-right:10px; border:1px solid #ddd; border-top-color:#aaa; border-left-color:#aaa; padding:4px;}
+
+.checkout-buttons {width:988px; height:50px; background-color:#f1f1f1;}
+.checkout-steps .step-current .checkout-buttons {width:984px;}
+.checkout-buttons .inner {padding-right:18px;}
+.checkout-buttons .total {padding-right:18px; float:right; line-height:50px; font-size:14px; font-weight:700;}
+.checkout-buttons .total strong {color:#c00; font-size:20px;}
+.checkout-buttons .checkout-submit {width:135px; height:40px; margin-top:5px; border:0; float:right; cursor:pointer; background:url(../images/btn-order.gif) no-repeat;}
+.checkout-buttons .sticky-placeholder {width:988px; height:50px; border-top:1px solid #ddd;}
+.checkout-steps .step-current .sticky-placeholder {width:984px;}
+.checkout-buttons .sticky-mask {width:100%; height:50px; position:absolute; top:0; left:0; z-index:9999; opacity:0.9; _filter:alpha(opacity=90); background-color:#eee;}
+.checkout-buttons .sticky-placeholder .sticky-wrap {width:100%; height:50px; position:absolute; top:0; left:0; z-index:10010;}
+.checkout-buttons .checkout-state {margin:10px 0 0 10px;}
+@-moz-document url-prefix() {
+    .checkout-steps .sticky-placeholder {margin-left:1px;}
+}
